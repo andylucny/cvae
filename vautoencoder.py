@@ -226,7 +226,7 @@ def generate_and_save_images(model, epoch, test_sample):
   # tight_layout minimizes the overlap between 2 sub-plots
   plt.savefig('image_at_epoch_{:04d}.png'.format(epoch))
   #plt.show()
-  fig.close()
+  plt.close()
 
 # Pick a sample of the test set for generating output images
 assert batch_size >= num_examples_to_generate
